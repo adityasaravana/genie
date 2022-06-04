@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+        "version" : "5.4.4"
+      }
+    },
+    {
+      "identity" : "anycodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Flight-School/AnyCodable.git",
+      "state" : {
+        "revision" : "3e38cd6f639e4919d2d6735ac505412a051a3d28",
+        "version" : "0.4.1"
+      }
+    },
+    {
+      "identity" : "openai",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mattt/OpenAI",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f76349c6ec94a68c46a57dcb2ec9032adb0eede9"
+      }
+    }
+  ],
+  "version" : 2
+}

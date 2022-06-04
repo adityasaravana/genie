@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		593600BD284B35DA00C5E276 /* OpenAIConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593600BC284B35DA00C5E276 /* OpenAIConnector.swift */; };
+		593600BF284BC79400C5E276 /* OpenAIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593600BE284BC79400C5E276 /* OpenAIResponseHandler.swift */; };
+		59F8441C284B1D1D002F5590 /* GenieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8441B284B1D1D002F5590 /* GenieApp.swift */; };
+		59F8441E284B1D1D002F5590 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8441D284B1D1D002F5590 /* ContentView.swift */; };
+		59F84420284B1D1D002F5590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F8441F284B1D1D002F5590 /* Assets.xcassets */; };
+		59F84423284B1D1D002F5590 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F84422284B1D1D002F5590 /* Preview Assets.xcassets */; };
+		59F8442D284B1D1E002F5590 /* GenieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8442C284B1D1E002F5590 /* GenieTests.swift */; };
+		59F84437284B1D1E002F5590 /* GenieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F84436284B1D1E002F5590 /* GenieUITests.swift */; };
+		59F84439284B1D1E002F5590 /* GenieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F84438284B1D1E002F5590 /* GenieUITestsLaunchTests.swift */; };
+		59F8444D284B22C2002F5590 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 59F8444C284B22C2002F5590 /* OpenAI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59F84429284B1D1D002F5590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59F84410284B1D1D002F5590 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59F84417284B1D1D002F5590;
+			remoteInfo = Genie;
+		};
+		59F84433284B1D1E002F5590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59F84410284B1D1D002F5590 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59F84417284B1D1D002F5590;
+			remoteInfo = Genie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		593600BC284B35DA00C5E276 /* OpenAIConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIConnector.swift; sourceTree = "<group>"; };
+		593600BE284BC79400C5E276 /* OpenAIResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIResponseHandler.swift; sourceTree = "<group>"; };
+		593600C0284BCCD800C5E276 /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
+		593600C1284BCF5000C5E276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		59F84418284B1D1D002F5590 /* Genie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Genie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F8441B284B1D1D002F5590 /* GenieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieApp.swift; sourceTree = "<group>"; };
+		59F8441D284B1D1D002F5590 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		59F8441F284B1D1D002F5590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59F84422284B1D1D002F5590 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		59F84428284B1D1D002F5590 /* GenieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F8442C284B1D1E002F5590 /* GenieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieTests.swift; sourceTree = "<group>"; };
+		59F84432284B1D1E002F5590 /* GenieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F84436284B1D1E002F5590 /* GenieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieUITests.swift; sourceTree = "<group>"; };
+		59F84438284B1D1E002F5590 /* GenieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59F84415284B1D1D002F5590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F8444D284B22C2002F5590 /* OpenAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F84425284B1D1D002F5590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F8442F284B1D1E002F5590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59F8440F284B1D1D002F5590 = {
+			isa = PBXGroup;
+			children = (
+				593600C0284BCCD800C5E276 /* Keys.xcconfig */,
+				593600BE284BC79400C5E276 /* OpenAIResponseHandler.swift */,
+				593600BC284B35DA00C5E276 /* OpenAIConnector.swift */,
+				59F8441A284B1D1D002F5590 /* Genie */,
+				59F8442B284B1D1D002F5590 /* GenieTests */,
+				59F84435284B1D1E002F5590 /* GenieUITests */,
+				59F84419284B1D1D002F5590 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59F84419284B1D1D002F5590 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59F84418284B1D1D002F5590 /* Genie.app */,
+				59F84428284B1D1D002F5590 /* GenieTests.xctest */,
+				59F84432284B1D1E002F5590 /* GenieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59F8441A284B1D1D002F5590 /* Genie */ = {
+			isa = PBXGroup;
+			children = (
+				593600C1284BCF5000C5E276 /* Info.plist */,
+				59F8441B284B1D1D002F5590 /* GenieApp.swift */,
+				59F8441D284B1D1D002F5590 /* ContentView.swift */,
+				59F8441F284B1D1D002F5590 /* Assets.xcassets */,
+				59F84421284B1D1D002F5590 /* Preview Content */,
+			);
+			path = Genie;
+			sourceTree = "<group>";
+		};
+		59F84421284B1D1D002F5590 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				59F84422284B1D1D002F5590 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59F8442B284B1D1D002F5590 /* GenieTests */ = {
+			isa = PBXGroup;
+			children = (
+				59F8442C284B1D1E002F5590 /* GenieTests.swift */,
+			);
+			path = GenieTests;
+			sourceTree = "<group>";
+		};
+		59F84435284B1D1E002F5590 /* GenieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59F84436284B1D1E002F5590 /* GenieUITests.swift */,
+				59F84438284B1D1E002F5590 /* GenieUITestsLaunchTests.swift */,
+			);
+			path = GenieUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59F84417284B1D1D002F5590 /* Genie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F8443C284B1D1E002F5590 /* Build configuration list for PBXNativeTarget "Genie" */;
+			buildPhases = (
+				59F84414284B1D1D002F5590 /* Sources */,
+				59F84415284B1D1D002F5590 /* Frameworks */,
+				59F84416284B1D1D002F5590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Genie;
+			packageProductDependencies = (
+				59F8444C284B22C2002F5590 /* OpenAI */,
+			);
+			productName = Genie;
+			productReference = 59F84418284B1D1D002F5590 /* Genie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59F84427284B1D1D002F5590 /* GenieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F8443F284B1D1E002F5590 /* Build configuration list for PBXNativeTarget "GenieTests" */;
+			buildPhases = (
+				59F84424284B1D1D002F5590 /* Sources */,
+				59F84425284B1D1D002F5590 /* Frameworks */,
+				59F84426284B1D1D002F5590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59F8442A284B1D1D002F5590 /* PBXTargetDependency */,
+			);
+			name = GenieTests;
+			productName = GenieTests;
+			productReference = 59F84428284B1D1D002F5590 /* GenieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59F84431284B1D1E002F5590 /* GenieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F84442284B1D1E002F5590 /* Build configuration list for PBXNativeTarget "GenieUITests" */;
+			buildPhases = (
+				59F8442E284B1D1E002F5590 /* Sources */,
+				59F8442F284B1D1E002F5590 /* Frameworks */,
+				59F84430284B1D1E002F5590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59F84434284B1D1E002F5590 /* PBXTargetDependency */,
+			);
+			name = GenieUITests;
+			productName = GenieUITests;
+			productReference = 59F84432284B1D1E002F5590 /* GenieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59F84410284B1D1D002F5590 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					59F84417284B1D1D002F5590 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					59F84427284B1D1D002F5590 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 59F84417284B1D1D002F5590;
+					};
+					59F84431284B1D1E002F5590 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 59F84417284B1D1D002F5590;
+					};
+				};
+			};
+			buildConfigurationList = 59F84413284B1D1D002F5590 /* Build configuration list for PBXProject "Genie" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59F8440F284B1D1D002F5590;
+			packageReferences = (
+				59F8444B284B22C1002F5590 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = 59F84419284B1D1D002F5590 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59F84417284B1D1D002F5590 /* Genie */,
+				59F84427284B1D1D002F5590 /* GenieTests */,
+				59F84431284B1D1E002F5590 /* GenieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59F84416284B1D1D002F5590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F84423284B1D1D002F5590 /* Preview Assets.xcassets in Resources */,
+				59F84420284B1D1D002F5590 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F84426284B1D1D002F5590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F84430284B1D1E002F5590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59F84414284B1D1D002F5590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593600BD284B35DA00C5E276 /* OpenAIConnector.swift in Sources */,
+				59F8441E284B1D1D002F5590 /* ContentView.swift in Sources */,
+				59F8441C284B1D1D002F5590 /* GenieApp.swift in Sources */,
+				593600BF284BC79400C5E276 /* OpenAIResponseHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F84424284B1D1D002F5590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F8442D284B1D1E002F5590 /* GenieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F8442E284B1D1E002F5590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F84437284B1D1E002F5590 /* GenieUITests.swift in Sources */,
+				59F84439284B1D1E002F5590 /* GenieUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59F8442A284B1D1D002F5590 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59F84417284B1D1D002F5590 /* Genie */;
+			targetProxy = 59F84429284B1D1D002F5590 /* PBXContainerItemProxy */;
+		};
+		59F84434284B1D1E002F5590 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59F84417284B1D1D002F5590 /* Genie */;
+			targetProxy = 59F84433284B1D1E002F5590 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		59F8443A284B1D1E002F5590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593600C0284BCCD800C5E276 /* Keys.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59F8443B284B1D1E002F5590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59F8443D284B1D1E002F5590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Genie/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Genie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adityasaravana.Genie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59F8443E284B1D1E002F5590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Genie/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Genie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adityasaravana.Genie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59F84440284B1D1E002F5590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adityasaravana.GenieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Genie.app/Genie";
+			};
+			name = Debug;
+		};
+		59F84441284B1D1E002F5590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adityasaravana.GenieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Genie.app/Genie";
+			};
+			name = Release;
+		};
+		59F84443284B1D1E002F5590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adityasaravana.GenieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Genie;
+			};
+			name = Debug;
+		};
+		59F84444284B1D1E002F5590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adityasaravana.GenieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Genie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59F84413284B1D1D002F5590 /* Build configuration list for PBXProject "Genie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F8443A284B1D1E002F5590 /* Debug */,
+				59F8443B284B1D1E002F5590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59F8443C284B1D1E002F5590 /* Build configuration list for PBXNativeTarget "Genie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F8443D284B1D1E002F5590 /* Debug */,
+				59F8443E284B1D1E002F5590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59F8443F284B1D1E002F5590 /* Build configuration list for PBXNativeTarget "GenieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F84440284B1D1E002F5590 /* Debug */,
+				59F84441284B1D1E002F5590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59F84442284B1D1E002F5590 /* Build configuration list for PBXNativeTarget "GenieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F84443284B1D1E002F5590 /* Debug */,
+				59F84444284B1D1E002F5590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		59F8444B284B22C1002F5590 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mattt/OpenAI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		59F8444C284B22C2002F5590 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59F8444B284B22C1002F5590 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 59F84410284B1D1D002F5590 /* Project object */;
+}
