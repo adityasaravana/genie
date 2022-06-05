@@ -23,29 +23,31 @@ struct ContentView: View {
     
     @State var overrideStorage: ComposeMailData = .empty
     @State var interceptorActivationExplanation: [String] = []
+    
+    @State var isLoading = false
     var body: some View {
         
         VStack {
-            SwiftSpeech.Demos.Basic(localeIdentifier: text).onRecognizeLatest(update: $text)
+            SwiftSpeech.Demos.Basic(localeIdentifier: text).onRecognizeLatest(update: $text).padding(50)
             
-            Text("Debug: text value is \(text)")
-            //            SwiftSpeech.RecordButton()
-            //                .onRecognizeLatest(update: $text)
-            //                .swiftSpeechRecordOnHold(sessionConfiguration: .init(), animation: .default, distanceToCancel: 50)
             
             Text("or").font(.title).bold().foregroundColor(.gray)
             
             TextField("Enter your text here", text: $text).padding(30).background(Color.gray.opacity(0.3).cornerRadius(100).padding(.horizontal))
-            
+            Spacer()
             Button("Submit") {
+                isLoading = true
                 if ContentFilterManager().check(text).isEmpty {
+                    
                     result = openAIConnector.processPrompt(prompt: text) ?? "Whoops! An error occured."
                     mailData = ComposeMailData(subject: "", recipients: [""], message: result, attachments: [])
+                    isLoading = false
                     showMailView = true
                 } else {
                     inteceptorActivated = true
                     interceptorActivationExplanation = ContentFilterManager().check(text)
                     result = openAIConnector.processPrompt(prompt: text) ?? "Whoops! An error occured."
+                    isLoading = false
                     overrideStorage = ComposeMailData(subject: "", recipients: [""], message: result, attachments: [])
                 }
             }
@@ -69,6 +71,7 @@ struct ContentView: View {
         }.onAppear {
             SwiftSpeech.requestSpeechRecognitionAuthorization()
         }
+        .padding()
     }
 }
 
