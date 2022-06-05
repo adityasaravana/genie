@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5921DDDE284C646B006EBB25 /* ContentFilterManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5921DDDD284C646B006EBB25 /* ContentFilterManagers.swift */; };
 		593600BD284B35DA00C5E276 /* OpenAIConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593600BC284B35DA00C5E276 /* OpenAIConnector.swift */; };
 		593600BF284BC79400C5E276 /* OpenAIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593600BE284BC79400C5E276 /* OpenAIResponseHandler.swift */; };
 		593600C8284C024B00C5E276 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 593600C7284C024B00C5E276 /* SwiftSpeech */; };
 		593600CD284C20A800C5E276 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593600CC284C20A800C5E276 /* MailView.swift */; };
 		593600D0284C220000C5E276 /* SwiftUIMailView in Frameworks */ = {isa = PBXBuildFile; productRef = 593600CF284C220000C5E276 /* SwiftUIMailView */; };
-		593600D8284C50D700C5E276 /* InterceptAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 593600D7284C50D700C5E276 /* InterceptAPI */; };
+		59DC52E6284C62DC0002D3E8 /* ContentFilter.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 59DC52E5284C62DC0002D3E8 /* ContentFilter.mlmodel */; };
 		59F8441C284B1D1D002F5590 /* GenieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8441B284B1D1D002F5590 /* GenieApp.swift */; };
 		59F8441E284B1D1D002F5590 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8441D284B1D1D002F5590 /* ContentView.swift */; };
 		59F84420284B1D1D002F5590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F8441F284B1D1D002F5590 /* Assets.xcassets */; };
@@ -40,11 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5921DDDD284C646B006EBB25 /* ContentFilterManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentFilterManagers.swift; sourceTree = "<group>"; };
 		593600BC284B35DA00C5E276 /* OpenAIConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIConnector.swift; sourceTree = "<group>"; };
 		593600BE284BC79400C5E276 /* OpenAIResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIResponseHandler.swift; sourceTree = "<group>"; };
 		593600C0284BCCD800C5E276 /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		593600C1284BCF5000C5E276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		593600CC284C20A800C5E276 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		59DC52E5284C62DC0002D3E8 /* ContentFilter.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ContentFilter.mlmodel; path = ../../../../Desktop/ContentFilter.mlmodel; sourceTree = "<group>"; };
 		59F84418284B1D1D002F5590 /* Genie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Genie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F8441B284B1D1D002F5590 /* GenieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieApp.swift; sourceTree = "<group>"; };
 		59F8441D284B1D1D002F5590 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,7 +67,6 @@
 			files = (
 				593600D0284C220000C5E276 /* SwiftUIMailView in Frameworks */,
 				593600C8284C024B00C5E276 /* SwiftSpeech in Frameworks */,
-				593600D8284C50D700C5E276 /* InterceptAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +90,8 @@
 		59F8440F284B1D1D002F5590 = {
 			isa = PBXGroup;
 			children = (
+				5921DDDD284C646B006EBB25 /* ContentFilterManagers.swift */,
+				59DC52E5284C62DC0002D3E8 /* ContentFilter.mlmodel */,
 				593600C0284BCCD800C5E276 /* Keys.xcconfig */,
 				593600BE284BC79400C5E276 /* OpenAIResponseHandler.swift */,
 				593600BC284B35DA00C5E276 /* OpenAIConnector.swift */,
@@ -165,7 +169,6 @@
 			packageProductDependencies = (
 				593600C7284C024B00C5E276 /* SwiftSpeech */,
 				593600CF284C220000C5E276 /* SwiftUIMailView */,
-				593600D7284C50D700C5E276 /* InterceptAPI */,
 			);
 			productName = Genie;
 			productReference = 59F84418284B1D1D002F5590 /* Genie.app */;
@@ -242,7 +245,6 @@
 			packageReferences = (
 				593600C6284C024B00C5E276 /* XCRemoteSwiftPackageReference "SwiftSpeech" */,
 				593600CE284C220000C5E276 /* XCRemoteSwiftPackageReference "swiftui-mail-view" */,
-				593600D6284C50D700C5E276 /* XCRemoteSwiftPackageReference "interceptor-api" */,
 			);
 			productRefGroup = 59F84419284B1D1D002F5590 /* Products */;
 			projectDirPath = "";
@@ -286,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5921DDDE284C646B006EBB25 /* ContentFilterManagers.swift in Sources */,
 				593600BD284B35DA00C5E276 /* OpenAIConnector.swift in Sources */,
+				59DC52E6284C62DC0002D3E8 /* ContentFilter.mlmodel in Sources */,
 				59F8441E284B1D1D002F5590 /* ContentView.swift in Sources */,
 				59F8441C284B1D1D002F5590 /* GenieApp.swift in Sources */,
 				593600BF284BC79400C5E276 /* OpenAIResponseHandler.swift in Sources */,
@@ -632,14 +636,6 @@
 				kind = branch;
 			};
 		};
-		593600D6284C50D700C5E276 /* XCRemoteSwiftPackageReference "interceptor-api" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/adityasaravana/interceptor-api";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -652,11 +648,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 593600CE284C220000C5E276 /* XCRemoteSwiftPackageReference "swiftui-mail-view" */;
 			productName = SwiftUIMailView;
-		};
-		593600D7284C50D700C5E276 /* InterceptAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 593600D6284C50D700C5E276 /* XCRemoteSwiftPackageReference "interceptor-api" */;
-			productName = InterceptAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

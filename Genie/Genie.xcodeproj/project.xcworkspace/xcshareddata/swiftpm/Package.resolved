@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "interceptor-api",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/adityasaravana/interceptor-api",
-      "state" : {
-        "branch" : "main",
-        "revision" : "2496494a4ac89b8b88facb14b1c0d70dad30b457"
-      }
-    },
-    {
       "identity" : "swiftspeech",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Cay-Zhang/SwiftSpeech",

@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftSpeech
 import SwiftUIMailView
-import InterceptAPI
+
 
 struct ContentView: View {
     let openAIConnector = OpenAIConnector()
@@ -20,6 +20,9 @@ struct ContentView: View {
     
     @State private var mailData: ComposeMailData = .empty
     @State private var showMailView = false
+    
+    @State var overrideStorage: ComposeMailData = .empty
+    @State var interceptorActivationExplanation: [String] = []
     var body: some View {
         
         VStack {
@@ -35,13 +38,16 @@ struct ContentView: View {
             TextField("Enter your text here", text: $text).padding(30).background(Color.gray.opacity(0.3).cornerRadius(100).padding(.horizontal))
             
             Button("Submit") {
-                if  {
+                if ContentFilterManager().check(text).isEmpty {
                     result = openAIConnector.processPrompt(prompt: text) ?? "Whoops! An error occured."
                     mailData = ComposeMailData(subject: "", recipients: [""], message: result, attachments: [])
                     showMailView = true
+                } else {
+                    inteceptorActivated = true
+                    interceptorActivationExplanation = ContentFilterManager().check(text)
+                    result = openAIConnector.processPrompt(prompt: text) ?? "Whoops! An error occured."
+                    overrideStorage = ComposeMailData(subject: "", recipients: [""], message: result, attachments: [])
                 }
-                
-                
             }
             .disabled(inteceptorActivated)
             .padding()
@@ -52,6 +58,14 @@ struct ContentView: View {
                 }
             }
             
+            if inteceptorActivated {
+            Text("Our content filter detected some edgy language. (\(ContentFilterManager().check(text)[0])) This is a warning. Maybe reword the sentence?").bold().multilineTextAlignment(.center).foregroundColor(.red)
+            Button("If you think that this suggestion is wrong, you can override it.") {
+                inteceptorActivated = false
+                mailData = overrideStorage
+                showMailView = true
+            }.font(.caption)
+            }
         }.onAppear {
             SwiftSpeech.requestSpeechRecognitionAuthorization()
         }
