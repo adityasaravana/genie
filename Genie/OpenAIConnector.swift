@@ -68,7 +68,9 @@ public class OpenAIConnector {
         if let requestData = executeRequest(request: request, withSessionConfig: nil) {
             let jsonStr = String(data: requestData, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
             print(jsonStr)
-            return jsonStr
+            let responseHandler = OpenAIResponseHandler()
+            return responseHandler.decodeJson(jsonString: jsonStr)?.choices[0].text
+            
         }
         
         return nil

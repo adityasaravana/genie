@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		593600BD284B35DA00C5E276 /* OpenAIConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593600BC284B35DA00C5E276 /* OpenAIConnector.swift */; };
 		593600BF284BC79400C5E276 /* OpenAIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593600BE284BC79400C5E276 /* OpenAIResponseHandler.swift */; };
+		593600C8284C024B00C5E276 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 593600C7284C024B00C5E276 /* SwiftSpeech */; };
+		593600CD284C20A800C5E276 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593600CC284C20A800C5E276 /* MailView.swift */; };
+		593600D0284C220000C5E276 /* SwiftUIMailView in Frameworks */ = {isa = PBXBuildFile; productRef = 593600CF284C220000C5E276 /* SwiftUIMailView */; };
+		593600D8284C50D700C5E276 /* InterceptAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 593600D7284C50D700C5E276 /* InterceptAPI */; };
 		59F8441C284B1D1D002F5590 /* GenieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8441B284B1D1D002F5590 /* GenieApp.swift */; };
 		59F8441E284B1D1D002F5590 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8441D284B1D1D002F5590 /* ContentView.swift */; };
 		59F84420284B1D1D002F5590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F8441F284B1D1D002F5590 /* Assets.xcassets */; };
@@ -16,7 +20,6 @@
 		59F8442D284B1D1E002F5590 /* GenieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8442C284B1D1E002F5590 /* GenieTests.swift */; };
 		59F84437284B1D1E002F5590 /* GenieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F84436284B1D1E002F5590 /* GenieUITests.swift */; };
 		59F84439284B1D1E002F5590 /* GenieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F84438284B1D1E002F5590 /* GenieUITestsLaunchTests.swift */; };
-		59F8444D284B22C2002F5590 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 59F8444C284B22C2002F5590 /* OpenAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,7 @@
 		593600BE284BC79400C5E276 /* OpenAIResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIResponseHandler.swift; sourceTree = "<group>"; };
 		593600C0284BCCD800C5E276 /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		593600C1284BCF5000C5E276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		593600CC284C20A800C5E276 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		59F84418284B1D1D002F5590 /* Genie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Genie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F8441B284B1D1D002F5590 /* GenieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieApp.swift; sourceTree = "<group>"; };
 		59F8441D284B1D1D002F5590 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F8444D284B22C2002F5590 /* OpenAI in Frameworks */,
+				593600D0284C220000C5E276 /* SwiftUIMailView in Frameworks */,
+				593600C8284C024B00C5E276 /* SwiftSpeech in Frameworks */,
+				593600D8284C50D700C5E276 /* InterceptAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +116,7 @@
 				59F8441D284B1D1D002F5590 /* ContentView.swift */,
 				59F8441F284B1D1D002F5590 /* Assets.xcassets */,
 				59F84421284B1D1D002F5590 /* Preview Content */,
+				593600CC284C20A800C5E276 /* MailView.swift */,
 			);
 			path = Genie;
 			sourceTree = "<group>";
@@ -156,7 +163,9 @@
 			);
 			name = Genie;
 			packageProductDependencies = (
-				59F8444C284B22C2002F5590 /* OpenAI */,
+				593600C7284C024B00C5E276 /* SwiftSpeech */,
+				593600CF284C220000C5E276 /* SwiftUIMailView */,
+				593600D7284C50D700C5E276 /* InterceptAPI */,
 			);
 			productName = Genie;
 			productReference = 59F84418284B1D1D002F5590 /* Genie.app */;
@@ -231,7 +240,9 @@
 			);
 			mainGroup = 59F8440F284B1D1D002F5590;
 			packageReferences = (
-				59F8444B284B22C1002F5590 /* XCRemoteSwiftPackageReference "OpenAI" */,
+				593600C6284C024B00C5E276 /* XCRemoteSwiftPackageReference "SwiftSpeech" */,
+				593600CE284C220000C5E276 /* XCRemoteSwiftPackageReference "swiftui-mail-view" */,
+				593600D6284C50D700C5E276 /* XCRemoteSwiftPackageReference "interceptor-api" */,
 			);
 			productRefGroup = 59F84419284B1D1D002F5590 /* Products */;
 			projectDirPath = "";
@@ -279,6 +290,7 @@
 				59F8441E284B1D1D002F5590 /* ContentView.swift in Sources */,
 				59F8441C284B1D1D002F5590 /* GenieApp.swift in Sources */,
 				593600BF284BC79400C5E276 /* OpenAIResponseHandler.swift in Sources */,
+				593600CD284C20A800C5E276 /* MailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,6 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Genie/Preview Content\"";
+				DEVELOPMENT_TEAM = E2RJE8M8Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Genie/Info.plist;
@@ -467,6 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Genie/Preview Content\"";
+				DEVELOPMENT_TEAM = E2RJE8M8Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Genie/Info.plist;
@@ -602,9 +616,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		59F8444B284B22C1002F5590 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+		593600C6284C024B00C5E276 /* XCRemoteSwiftPackageReference "SwiftSpeech" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mattt/OpenAI";
+			repositoryURL = "https://github.com/Cay-Zhang/SwiftSpeech";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		593600CE284C220000C5E276 /* XCRemoteSwiftPackageReference "swiftui-mail-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-mail-view";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		593600D6284C50D700C5E276 /* XCRemoteSwiftPackageReference "interceptor-api" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adityasaravana/interceptor-api";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -613,10 +643,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		59F8444C284B22C2002F5590 /* OpenAI */ = {
+		593600C7284C024B00C5E276 /* SwiftSpeech */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 59F8444B284B22C1002F5590 /* XCRemoteSwiftPackageReference "OpenAI" */;
-			productName = OpenAI;
+			package = 593600C6284C024B00C5E276 /* XCRemoteSwiftPackageReference "SwiftSpeech" */;
+			productName = SwiftSpeech;
+		};
+		593600CF284C220000C5E276 /* SwiftUIMailView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 593600CE284C220000C5E276 /* XCRemoteSwiftPackageReference "swiftui-mail-view" */;
+			productName = SwiftUIMailView;
+		};
+		593600D7284C50D700C5E276 /* InterceptAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 593600D6284C50D700C5E276 /* XCRemoteSwiftPackageReference "interceptor-api" */;
+			productName = InterceptAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
